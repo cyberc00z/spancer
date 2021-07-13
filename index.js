@@ -14,7 +14,7 @@ const app = express();
 
 // connected to the mongoDB cluster
 mongoose
-   .connect("mongodb+srv://adhrit:NXsF3Vd3Regnw6a@cluster0.jsest.mongodb.net/api?retryWrites=true&w=majority", {
+   .connect(process.env.MONGO_URL ,{
        useCreateIndex: true,
        useNewUrlParser: true,
        useFindAndModify: false,
