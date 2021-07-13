@@ -1,0 +1,7 @@
+{
+    "env": {
+        "mongoDatabase":"rnapp",
+        "mongoUserName":"adhrit",
+        "mongUserPassword":"NXsF3Vd3Regnw6a"
+    }
+}
