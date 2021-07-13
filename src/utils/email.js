@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 
 const { MAIL_SERVICE, MAIL_USER, MAIL_PASS } = process.env;
 
+dotenv.config();
 /**
  * Create a transporter object that will help use to send mails
 */
@@ -20,8 +21,8 @@ const transport = nodemailer.createTransport({
         host: "smtp.mailtrap.io",
         port: 2525,
         auth: {
-          user: "fb64b16c969367",
-          pass: "e8fcb9f66311fe"
+          user: process.env.user,
+          pass: process.env.pass
         }
 });
 
